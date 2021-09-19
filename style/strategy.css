@@ -1,0 +1,65 @@
+.strategy {
+  max-width: 1000px;
+  margin: 50px auto;
+}
+
+.strategy h1 {
+  font-size: 28px;
+}
+.strategy p {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  margin: 10px 0 30px;
+  letter-spacing: 0.6px;
+}
+
+.strategy-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 20px;
+  grid-gap: 20px;
+}
+
+.strategy-items .item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 2px;
+}
+
+.strategy-items .item i {
+  padding: 18px;
+  border-radius: 50%;
+  background-color: #23a6f0;
+}
+
+.strategy-items .item span {
+  font-weight: 600;
+  font-size: 12px;
+  color: #737373;
+  margin-left: 5px;
+}
+
+.strategy a.btn {
+  display: inline-block;
+  margin-top: 30px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .strategy a.btn {
+    display: inline-block;
+    margin-top: 7px;
+    text-align: center;
+  }
+
+  .strategy .strategy-items {
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 25px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .strategy .strategy-items {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,165 @@
+.pricing {
+  max-width: 1000px;
+  margin: 100px auto;
+  text-align: center;
+}
+
+.pricing h1 {
+  font-size: 28px;
+}
+
+.pricing p {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  margin: 10px 0 30px;
+  letter-spacing: 0.6px;
+}
+
+.prices {
+  max-width: 900px;
+  margin: 80px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.price {
+  padding: 30px 20px;
+  background-color: #fff;
+  text-align: center;
+  color: black;
+  border-radius: 7px;
+  border: 0.719231px solid #23a6f0;
+  margin-right: 1px;
+  flex: 1;
+}
+
+.price-free,
+.price-premium {
+  margin-top: 30px;
+}
+
+.price-standard {
+  background-color: #23a6f0;
+}
+
+.price h1 {
+  color: #252b42;
+  font-size: 18px;
+}
+
+.price p {
+  color: #737373;
+  font-weight: 700;
+  margin: 25px auto;
+}
+
+.price-free .about {
+  display: none;
+}
+
+.tryBtn {
+  background-color: #23a6f0;
+  font-size: 12px;
+  color: #fff;
+  display: block;
+  margin-top: 25px;
+  padding: 15px 0;
+  font-weight: 700;
+  border-radius: 4px;
+}
+
+.price .money {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+.price .money span {
+  color: #23a6f0;
+  font-size: 30px;
+  font-weight: 700;
+  margin-right: 10px;
+}
+.price .time p {
+  margin: 0;
+  text-align: left;
+  color: #23a6f0;
+}
+.price .time .month {
+  color: #8ec2f2;
+  font-weight: 500;
+}
+
+.price .green {
+  margin-bottom: 12px;
+  text-align: left;
+}
+.price .green i {
+  font-size: 15px;
+  padding: 5px 6px;
+  background-color: #2dc071;
+  border-radius: 50%;
+  color: #fff;
+  font-weight: 300;
+}
+.price .green span {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  line-height: 18px;
+  color: #252b42;
+}
+.price .gray {
+  margin-bottom: 12px;
+  text-align: left;
+}
+.price .gray i {
+  font-size: 15px;
+  padding: 5px 6px;
+  background-color: #bdbdbd;
+  border-radius: 50%;
+  color: #fff;
+  font-weight: 300;
+}
+.price .gray span {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  line-height: 18px;
+  color: #252b42;
+}
+
+.price-standard .tryBtn {
+  background-color: #fff;
+  color: #23a6f0;
+  margin-top: 30px;
+}
+
+.price-standard .green span,
+.price-standard .gray span,
+.price-standard .money span,
+.price-standard .time p,
+.price-standard h1,
+.price-standard p {
+  color: #fff;
+}
+
+@media only screen and (max-width: 930px) {
+  .price-standard,
+  .price-premium {
+    display: none;
+  }
+
+  .price-free {
+    flex: 0;
+  }
+
+  .price-free .about {
+    display: block;
+  }
+
+  .price-free .green,
+  .price-free .gray {
+    display: none;
+  }
+}

@@ -1,0 +1,109 @@
+.header {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.header-icons {
+  display: none;
+}
+
+.navbar-inner {
+  display: flex;
+  gap: 16px;
+  color: #fff;
+}
+
+.header-mobile {
+  display: flex;
+}
+
+.header-brand {
+  padding-right: 60px;
+}
+
+.navbar a {
+  font-weight: 600;
+}
+
+.header-right a {
+  font-weight: 700;
+}
+
+.become-member-btn {
+  background: #23a6f0;
+  padding: 12px 18px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  margin-left: 32px;
+}
+
+.become-member-btn i {
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 900px) {
+  .header-right {
+    display: none;
+  }
+
+  .header-brand {
+    padding-right: 0;
+  }
+
+  .header-left {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 22px;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease;
+  }
+
+  .navbar li {
+    padding: 12px;
+  }
+
+  .navbar-inner {
+    flex-direction: column;
+    margin: 50px 0 20px;
+  }
+
+  .navbar.open {
+    height: 300px;
+  }
+
+  .header-icons {
+    display: flex;
+  }
+
+  .header-mobile {
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .icon-btn {
+    appearance: none;
+    background: transparent;
+    border: none;
+    padding: 15px;
+    color: #fff;
+    font-size: 18px;
+  }
+}

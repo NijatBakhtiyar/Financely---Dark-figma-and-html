@@ -1,0 +1,53 @@
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.intro .content h1 {
+  font-size: 42px;
+  max-width: 450px;
+  font-weight: 800;
+}
+
+.intro .content p {
+  max-width: 300px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  margin: 20px 0px 30px;
+}
+
+.quote-more .primary-btn {
+  margin-right: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+  .intro {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 30px;
+  }
+  .intro .content h1 {
+    font-size: 28px;
+    margin: 20px;
+  }
+  .intro .content p {
+    margin: 0 auto 30px;
+  }
+  .intro .img {
+    margin: 30px auto;
+  }
+
+  .quote-more .primary-btn {
+    margin-right: 0;
+  }
+
+  .quote-more {
+    display: flex;
+    flex-direction: column;
+  }
+  .quote-more a {
+    margin: 7px 0;
+  }
+}
